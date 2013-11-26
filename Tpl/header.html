@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<title>Bootstrap 101 Template</title>
+<title>living</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Boot include -->
-<link href="{$smarty.const.TMPL_PATH}/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="{$smarty.const.TMPL_PATH}/css/living.css" rel="stylesheet" media="screen">
-<script src="{$smarty.const.TMPL_PATH}/js/jquery-1.7.1.min.js"></script>
-<script src="{$smarty.const.TMPL_PATH}/js/bootstrap.min.js"></script>
+<link href="{$smarty.const.__ROOT__}/Tpl/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{$smarty.const.__ROOT__}/Tpl/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="{$smarty.const.__ROOT__}/Tpl/css/living.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="{$smarty.const.__ROOT__}/Tpl/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{$smarty.const.__ROOT__}/Tpl/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{$smarty.const.__ROOT__}/Tpl/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 
 <body>
 <!-- Start 头部 -->
 <div id="header" class="">
-<ul class="nav nav-tabs">
-    <span class="navbar-text pull-left" style="width:70%;margin:6px 0 6px 20px;"><span class="h1">living <span class="small" style="font-size:18px;">more crazy, more beautiful</span></span></span>
-    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
-    <li><a href="#"><span class="glyphicon glyphicon-cog"> 帐户设置</span></a></li>
-</ul>
+	<span class="navbar-text pull-left" style="margin:-2px 0 0 20px;"><span class="h1"><a href="__APP__/index/index">living</a> <span class="small" style="font-size:18px;">high efficiency life for everyday.</span></span></span> 
+	<ul class="nav nav-tabs pull-right">
+	    <!-- <span class="navbar-text pull-left" style="width:70%;margin:6px 0 6px 20px;"><span class="h1">living <span class="small" style="font-size:18px;">high efficiency life for everyday.</span></span></span> -->
+
+	    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
+	    <li><a href="#"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
+	    <li><a href="__APP__/index/signin"><span class="glyphicon glyphicon-cog"> 帐户设置</span></a></li>
+	</ul>
+	<div class="clearfix"></div>
+	<hr style="margin:0" />
 </div>
 <!-- End 头部 -->

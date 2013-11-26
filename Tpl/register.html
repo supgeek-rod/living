@@ -1,0 +1,38 @@
+{include file="header.html"}
+{$title}
+<!-- Start 主体部分 -->
+<div id="mainer">
+  <div id="register" class="container">
+    <form class="form-horizontal" role="form">
+      <h2 class="text-center" style="margin-bottom:26px">
+        <b>新用户注册</b>
+      </h2>
+      <div class="form-group">
+        <label class="col-xs-3 control-label">帐号:</label>
+        <div class="col-xs-9">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="请使用Email做为你的帐号">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-3 control-label">密码:</label>
+        <div class="col-xs-9">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-xs-3 control-label">重复密码:</label>
+        <div class="col-xs-9">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group" style="margin-top:18px">
+        <div class="col-sm-12 text-center">
+          <a href="__APP__/index/signin" class="btn btn-default">返回登录</a>
+          <button type="submit" class="btn btn-primary col-xs-offset-1">确认注册</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End 主体部分 -->
+{include file="footer.html"}

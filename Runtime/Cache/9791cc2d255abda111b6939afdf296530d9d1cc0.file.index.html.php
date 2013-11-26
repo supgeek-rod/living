@@ -1,28 +1,27 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-11-26 20:39:47
-         compiled from "./Tpl/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:188240246752920166832925-53581918%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2013-11-26 12:07:43
+         compiled from "./Tpl/Index/index.html" */ ?>
+<?php /*%%SmartyHeaderCode:179551040852941e8f1dc835-83613969%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '72df41529e5f45fc7b90d94db1f122d0ebef0bff' => 
+    '9791cc2d255abda111b6939afdf296530d9d1cc0' => 
     array (
-      0 => './Tpl/index.html',
-      1 => 1385469586,
+      0 => './Tpl/Index/index.html',
+      1 => 1385386882,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '188240246752920166832925-53581918',
+  'nocache_hash' => '179551040852941e8f1dc835-83613969',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_52920166980a2',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_52941e8f27663',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52920166980a2')) {function content_52920166980a2($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_52941e8f27663')) {function content_52941e8f27663($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <!-- Start 主体部分 -->
-
 <div id="mainer">
 	<div class="row">
 	    <div class="col-lg-12" style="height:40px"></div>
@@ -74,12 +73,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 			<div class="panel-body">
 			    <ul class="list-group">
-					<li class="list-group-item"><input class="cbox" type="checkbox">这个周未去理头发</li>
-					<li class="list-group-item"><input class="cbox" type="checkbox">星期一和sup.rod一起去爬万里长城万里长城</li>
-					<li class="list-group-item"><input class="cbox" type="checkbox">这个周未去理头发</li>
-					<li class="list-group-item"><input class="cbox" type="checkbox">这个周未去理头发</li>
-					<li class="list-group-item"><input class="cbox" type="checkbox">星期一和sup.rod一起去爬万里长城万里长城</li>
-					<li class="list-group-item"><input class="cbox" type="checkbox">星期一和sup.rod一起去爬万里长城万里长城</li>
+					<li class="list-group-item"><input type="checkbox"> 这个周未去理头发</li>
+					<li class="list-group-item"><input type="checkbox"> 星期一和sup.rod一起去爬万里长城万里长城</li>
+					<li class="list-group-item"><input type="checkbox"> 这个周未去理头发</li>
+					<li class="list-group-item"><input type="checkbox"> 这个周未去理头发</li>
+					<li class="list-group-item"><input type="checkbox"> 星期一和sup.rod一起去爬万里长城万里长城</li>
+					<li class="list-group-item"><input type="checkbox"> 星期一和sup.rod一起去爬万里长城万里长城</li>
+					<li class="list-group-item"><input type="checkbox"> 这个周未去理头发</li>
+					<li class="list-group-item"><input type="checkbox"> 星期一和sup.rod一起去爬万里长城万里长城</li>
+					<li class="list-group-item"><input type="checkbox"> 这个周未去理头发</li>
+					<li class="list-group-item"><input type="checkbox"> 星期一和sup.rod一起去爬万里长城万里长城</li>
 			    </ul>
 			</div>
 		    </div>
@@ -117,7 +120,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="clearfix"></div>
 </div>
 <!-- End 主体部分 -->
-<script type="text/javascript" src="<?php echo @__ROOT__;?>
-/Tpl/js/living.js"></script>
 <?php echo $_smarty_tpl->getSubTemplate ("footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 <?php }} ?>
