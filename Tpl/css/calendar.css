@@ -1,0 +1,9 @@
+#calendar { width:99%; margin: 0 auto; }
+
+/* 调整［月］日历高度 */
+#calendar .fc-border-separate td.fc-first>div { min-height:80px !important; }
+/* 日历事件颜色 */
+#calendar .fc-event { border:1px solid #DDD; background:#EEE !important; }
+
+/*  调整［周&日］日历高度  */
+#calendar .fc-col0>div { height:490px !important; }

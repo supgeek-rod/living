@@ -1,0 +1,1165 @@
+[ 2013-11-28T00:09:39+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+
+[ 2013-11-28T08:31:02+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2013-11-28T08:31:10+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2013-11-28T09:59:35+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2013-11-28T12:27:25+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2013-11-28T12:27:27+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+
+[ 2013-11-28T13:55:31+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+
+[ 2013-11-28T13:55:55+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=add&title=abc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003707s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/TaskAction.class.php 第 11 行.
+
+[ 2013-11-28T14:06:04+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2013-11-28T14:06:21+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+
+[ 2013-11-28T14:06:28+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=add&title=abc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002600s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/TaskAction.class.php 第 11 行.
+
+[ 2013-11-28T14:16:21+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+
+[ 2013-11-28T14:16:23+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2013-11-28T14:18:46+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+
+[ 2013-11-28T14:18:48+08:00 ] 0.0.0.0 /github/living/index.php/task/add?taskJson=add&title=abc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002634s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 11 行.
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T14:19:18+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+
+[ 2013-11-28T14:19:21+08:00 ] 0.0.0.0 /github/living/index.php/task/add?taskJson=add&title=abc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003393s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 11 行.
+NOTIC: [8] Undefined variable: _request /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 14 行.
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T14:19:31+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+
+[ 2013-11-28T14:19:33+08:00 ] 0.0.0.0 /github/living/index.php/task/add?taskJson=add&title=ABC
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003365s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 11 行.
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T14:20:33+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+
+[ 2013-11-28T14:20:52+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+
+[ 2013-11-28T14:20:54+08:00 ] 0.0.0.0 /github/living/index.php/task/add?taskJson=add&title=aa
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001087s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 11 行.
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T14:21:19+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+
+[ 2013-11-28T14:21:22+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002874s ]
+NOTIC: [8] Undefined index: user /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 11 行.
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T14:21:29+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+
+[ 2013-11-28T14:21:39+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+
+[ 2013-11-28T14:30:24+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+
+[ 2013-11-28T14:30:26+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+
+[ 2013-11-28T14:30:38+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+
+[ 2013-11-28T14:30:39+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+
+[ 2013-11-28T14:31:32+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+
+[ 2013-11-28T14:32:35+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2013-11-28T14:33:30+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+
+[ 2013-11-28T14:35:36+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+
+[ 2013-11-28T14:36:08+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2013-11-28T14:36:09+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+
+[ 2013-11-28T14:36:09+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+
+[ 2013-11-28T14:36:14+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2013-11-28T14:36:16+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+
+[ 2013-11-28T14:40:11+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2013-11-28T14:41:40+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+
+[ 2013-11-28T14:41:50+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2013-11-28T14:44:02+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+
+[ 2013-11-28T14:44:11+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+
+[ 2013-11-28T14:45:33+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+
+[ 2013-11-28T14:45:47+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+
+[ 2013-11-28T14:46:22+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+
+[ 2013-11-28T14:58:27+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+
+[ 2013-11-28T15:01:51+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000208s ]
+
+[ 2013-11-28T15:02:03+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2013-11-28T15:02:22+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+
+[ 2013-11-28T15:02:22+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+
+[ 2013-11-28T15:03:55+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2013-11-28T15:03:56+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2013-11-28T15:03:57+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2013-11-28T15:05:04+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+
+[ 2013-11-28T15:05:38+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+
+[ 2013-11-28T15:07:22+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+
+[ 2013-11-28T15:08:06+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+
+[ 2013-11-28T15:08:15+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+
+[ 2013-11-28T15:08:17+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2013-11-28T15:08:42+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
+
+[ 2013-11-28T15:13:31+08:00 ] ERR: (ThinkException) Model:selete您所请求的方法不存在！
+[ 2013-11-28T15:13:46+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+
+[ 2013-11-28T15:15:04+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+
+[ 2013-11-28T15:15:17+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+
+[ 2013-11-28T15:15:28+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+
+[ 2013-11-28T15:15:50+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+
+[ 2013-11-28T15:16:55+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+
+[ 2013-11-28T15:17:11+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+
+[ 2013-11-28T15:19:52+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+
+[ 2013-11-28T15:19:54+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001472s ]
+NOTIC: [8] Undefined variable: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-11-28T15:20:37+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2013-11-28T15:20:40+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003020s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('ABC',12,1385623240,15) [ RunTime:0.001564s ]
+
+[ 2013-11-28T15:20:47+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2013-11-28T15:22:36+08:00 ] ERR: (ThinkException) Action:align您所请求的方法不存在！
+[ 2013-11-28T15:22:58+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+
+[ 2013-11-28T15:23:05+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+
+[ 2013-11-28T15:23:05+08:00 ] 0.0.0.0 /github/living/index.php/ajax/taskJson?taskJson=all
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+
+[ 2013-11-28T15:36:26+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003045s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('一个新的提醒',12,1385624186,15) [ RunTime:0.000837s ]
+ERR: Duplicate entry '12' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('一个新的提醒',12,1385624186,15)
+
+[ 2013-11-28T15:36:36+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002412s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('一个新的提醒',12,1385624196,15) [ RunTime:0.000260s ]
+ERR: Duplicate entry '12' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('一个新的提醒',12,1385624196,15)
+
+[ 2013-11-28T15:37:38+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002667s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('aaa',12,1385624258,15) [ RunTime:0.000231s ]
+ERR: Duplicate entry '12' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('aaa',12,1385624258,15)
+
+[ 2013-11-28T15:37:43+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002470s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('abc',12,1385624263,15) [ RunTime:0.000211s ]
+ERR: Duplicate entry '12' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('abc',12,1385624263,15)
+
+[ 2013-11-28T15:39:22+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002739s ]
+SQL: INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('abc',12,1385624362,15) [ RunTime:0.000251s ]
+ERR: Duplicate entry '12' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `task` (`title`,`id`,`addtime`,`uid`) VALUES ('abc',12,1385624362,15)
+
+[ 2013-11-28T15:40:04+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002946s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('一个新的提醒',1385624404,15) [ RunTime:0.000406s ]
+
+[ 2013-11-28T15:48:20+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003005s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('aa',1385624900,15) [ RunTime:0.000396s ]
+
+[ 2013-11-28T15:49:12+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003039s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385624952,15) [ RunTime:0.000371s ]
+
+[ 2013-11-28T15:52:36+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002662s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385625156,15) [ RunTime:0.000390s ]
+
+[ 2013-11-28T15:52:39+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002764s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('ac',1385625159,15) [ RunTime:0.000372s ]
+
+[ 2013-11-28T15:52:41+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002548s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('aa',1385625161,15) [ RunTime:0.000365s ]
+
+[ 2013-11-28T15:57:44+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002649s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385625464,15) [ RunTime:0.000553s ]
+
+[ 2013-11-28T15:57:48+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001209s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('aaaaaa',1385625468,15) [ RunTime:0.000446s ]
+
+[ 2013-11-28T17:04:07+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002604s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('ok',1385629447,15) [ RunTime:0.000648s ]
+
+[ 2013-11-28T17:04:34+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002547s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385629474,15) [ RunTime:0.000706s ]
+
+[ 2013-11-28T17:09:01+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001055s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('okok',1385629741,15) [ RunTime:0.000703s ]
+
+[ 2013-11-28T19:28:46+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003046s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385638126,18) [ RunTime:0.000903s ]
+
+[ 2013-11-28T19:32:28+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001261s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385638348,18) [ RunTime:0.000597s ]
+
+[ 2013-11-28T19:32:48+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001170s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('111111111111',1385638368,18) [ RunTime:0.000403s ]
+
+[ 2013-11-28T19:34:06+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002776s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('222222222',1385638446,18) [ RunTime:0.000447s ]
+
+[ 2013-11-28T19:34:06+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001436s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('222222222',1385638446,18) [ RunTime:0.000475s ]
+
+[ 2013-11-28T19:43:19+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003202s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385638999,18) [ RunTime:0.000499s ]
+
+[ 2013-11-28T19:58:21+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002243s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385639901,18) [ RunTime:0.000433s ]
+
+[ 2013-11-28T19:59:16+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002672s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.002564s ]
+
+[ 2013-11-28T19:59:42+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003511s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000221s ]
+
+[ 2013-11-28T20:00:42+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001830s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 12 ) [ RunTime:0.002283s ]
+
+[ 2013-11-28T20:00:44+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002816s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 12 ) [ RunTime:0.000266s ]
+
+[ 2013-11-28T20:01:06+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002499s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 13 ) [ RunTime:0.000437s ]
+
+[ 2013-11-28T20:01:24+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002702s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 14 ) [ RunTime:0.000456s ]
+
+[ 2013-11-28T20:01:33+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002702s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 15 ) [ RunTime:0.000475s ]
+
+[ 2013-11-28T20:02:49+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001379s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 16 ) [ RunTime:0.000459s ]
+
+[ 2013-11-28T20:02:52+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003888s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 17 ) [ RunTime:0.000711s ]
+
+[ 2013-11-28T20:02:53+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002498s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 18 ) [ RunTime:0.000446s ]
+
+[ 2013-11-28T20:04:39+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003052s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 19 ) [ RunTime:0.000544s ]
+
+[ 2013-11-28T20:04:40+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002937s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 20 ) [ RunTime:0.000479s ]
+
+[ 2013-11-28T20:04:40+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002589s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 21 ) [ RunTime:0.000434s ]
+
+[ 2013-11-28T20:04:43+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003276s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000208s ]
+
+[ 2013-11-28T20:04:43+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002484s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 22 ) [ RunTime:0.000466s ]
+
+[ 2013-11-28T20:39:34+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002381s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`) VALUES ('abc',1385642374,18) [ RunTime:0.000439s ]
+
+[ 2013-11-28T20:40:28+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002576s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385642428,18,1) [ RunTime:0.000379s ]
+
+[ 2013-11-28T20:40:31+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002506s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 24 ) [ RunTime:0.000420s ]
+
+[ 2013-11-28T20:40:33+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001295s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 32 ) [ RunTime:0.000508s ]
+
+[ 2013-11-28T20:40:34+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002581s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 25 ) [ RunTime:0.000400s ]
+
+[ 2013-11-28T20:43:10+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003052s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('1',1385642590,18,1) [ RunTime:0.000512s ]
+
+[ 2013-11-28T20:43:16+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002488s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('2',1385642596,18,1) [ RunTime:0.000400s ]
+
+[ 2013-11-28T20:43:21+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003402s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 33 ) [ RunTime:0.000491s ]
+
+[ 2013-11-28T20:43:22+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002478s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 40 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000170s ]
+
+[ 2013-11-28T20:43:55+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003189s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 34 ) [ RunTime:0.000551s ]
+
+[ 2013-11-28T20:48:40+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002976s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('过年回家好好玩一把',1385642920,18,1) [ RunTime:0.000728s ]
+
+[ 2013-11-28T20:48:58+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001129s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('小伙伴玩一玩',1385642938,18,1) [ RunTime:0.000383s ]
+
+[ 2013-11-28T20:49:14+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003177s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('过年好好好',1385642954,18,1) [ RunTime:0.000388s ]
+
+[ 2013-11-28T20:50:01+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003274s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('提交影响好难看',1385643001,18,1) [ RunTime:0.000380s ]
+
+[ 2013-11-28T20:50:13+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002663s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('再看一次',1385643013,18,1) [ RunTime:0.000491s ]
+
+[ 2013-11-28T20:50:49+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003360s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php on line 26 and defined /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1470 行.
+
+[ 2013-11-28T20:50:49+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001066s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php on line 26 and defined /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1470 行.
+
+[ 2013-11-28T20:50:56+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003239s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php on line 26 and defined /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1470 行.
+
+[ 2013-11-28T20:50:59+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001921s ]
+NOTIC: [2] Missing argument 1 for Model::where(), called in /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php on line 26 and defined /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1451 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1459 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1462 行.
+NOTIC: [8] Undefined variable: where /Applications/MAMP/htdocs/github/living/ThinkPHP/Lib/Core/Model.class.php 第 1470 行.
+
+[ 2013-11-28T20:55:20+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002495s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000192s ]
+
+[ 2013-11-28T20:56:01+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002868s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000174s ]
+
+[ 2013-11-28T20:56:26+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003175s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000174s ]
+
+[ 2013-11-28T20:57:13+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003120s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000157s ]
+
+[ 2013-11-28T20:58:15+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003043s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000175s ]
+
+[ 2013-11-28T21:27:27+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001035s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('abc',1385645247,18,1) [ RunTime:0.000710s ]
+
+[ 2013-11-28T21:27:32+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002639s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 40 ) [ RunTime:0.000420s ]
+
+[ 2013-11-28T21:27:48+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002682s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('修改新增task效果',1385645268,18,1) [ RunTime:0.000471s ]
+
+[ 2013-11-28T21:31:00+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003224s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('测试提交按钮',1385645460,18,1) [ RunTime:0.000444s ]
+
+[ 2013-11-28T21:33:11+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003121s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('提交按钮',1385645591,18,1) [ RunTime:0.000448s ]
+
+[ 2013-11-28T21:33:11+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001080s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('提交按钮',1385645591,18,1) [ RunTime:0.000419s ]
+
+[ 2013-11-28T21:33:25+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002987s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('提交测试',1385645605,18,1) [ RunTime:0.000505s ]
+
+[ 2013-11-28T21:33:30+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002456s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 43 ) [ RunTime:0.000446s ]
+
+[ 2013-11-28T21:33:32+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002559s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 45 ) [ RunTime:0.000451s ]
+
+[ 2013-11-28T21:33:33+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002508s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 44 ) [ RunTime:0.000445s ]
+
+[ 2013-11-28T21:47:14+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002650s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385646434,18,1) [ RunTime:0.000464s ]
+
+[ 2013-11-28T21:47:19+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003120s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385646439,18,1) [ RunTime:0.000484s ]
+
+[ 2013-11-28T21:47:20+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002600s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385646440,18,1) [ RunTime:0.000467s ]
+
+[ 2013-11-28T21:47:44+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002476s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385646464,18,1) [ RunTime:0.000498s ]
+
+[ 2013-11-28T21:47:44+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001062s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('123',1385646464,18,1) [ RunTime:0.000408s ]
+
+[ 2013-11-28T21:47:47+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002473s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 43 行.
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = null ) [ RunTime:0.000178s ]
+
+[ 2013-11-28T21:47:48+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002457s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 48 ) [ RunTime:0.000428s ]
+
+[ 2013-11-28T21:47:49+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002324s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 47 ) [ RunTime:0.000490s ]
+
+[ 2013-11-28T21:47:50+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002542s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 46 ) [ RunTime:0.000484s ]
+
+[ 2013-11-28T21:47:53+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001384s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 50 ) [ RunTime:0.000516s ]
+
+[ 2013-11-28T21:47:54+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001144s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 49 ) [ RunTime:0.000472s ]
+
+[ 2013-11-28T21:47:57+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001087s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('1',1385646477,18,1) [ RunTime:0.000410s ]
+
+[ 2013-11-28T21:47:57+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001106s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('1',1385646477,18,1) [ RunTime:0.000406s ]
+
+[ 2013-11-28T21:48:38+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002431s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('add',1385646518,18,1) [ RunTime:0.000437s ]
+
+[ 2013-11-28T21:49:35+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003441s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 51 ) [ RunTime:0.000773s ]
+
+[ 2013-11-28T21:49:36+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001165s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 52 ) [ RunTime:0.000538s ]
+
+[ 2013-11-28T21:49:37+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002545s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 53 ) [ RunTime:0.000443s ]
+
+[ 2013-11-28T22:00:50+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003231s ]
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = 38 ) [ RunTime:0.000463s ]
+
+[ 2013-11-28T22:02:19+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002668s ]
+NOTIC: [8] Undefined index: value /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 27 行.
+SQL: DELETE FROM `task` WHERE ( `id` = 35 ) [ RunTime:0.000454s ]
+
+[ 2013-11-28T22:02:59+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002533s ]
+SQL: UPDATE `task` SET `title`='小伙伴玩一玩呀' WHERE ( `id` = 36 ) [ RunTime:0.000454s ]
+
+[ 2013-11-28T22:03:11+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002541s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('哈哈哈',1385647391,18,1) [ RunTime:0.000431s ]
+
+[ 2013-11-28T22:03:17+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002895s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 25 行.
+SQL: DELETE FROM `task` WHERE ( `id` = null ) [ RunTime:0.000228s ]
+
+[ 2013-11-28T22:03:54+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002506s ]
+SQL: DELETE FROM `task` WHERE ( `id` = 54 ) [ RunTime:0.000387s ]
+
+[ 2013-11-28T22:04:28+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002772s ]
+SQL: UPDATE `task` SET `title`='小伙伴玩一玩' WHERE ( `id` = 36 ) [ RunTime:0.001082s ]
+
+[ 2013-11-28T22:04:42+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001107s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('hahah',1385647482,18,1) [ RunTime:0.000488s ]
+
+[ 2013-11-28T22:04:58+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001091s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('huhuhu',1385647498,18,1) [ RunTime:0.000494s ]
+
+[ 2013-11-28T23:24:01+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001144s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('新的task',1385652241,18,1) [ RunTime:0.000453s ]
+
+[ 2013-11-28T23:24:10+08:00 ] 0.0.0.0 /github/living/index.php/task/update
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002596s ]
+SQL: UPDATE `task` SET `title`='新的task -2' WHERE ( `id` = 57 ) [ RunTime:0.000413s ]
+
+[ 2013-11-28T23:33:50+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003508s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 57 ) [ RunTime:0.000448s ]
+
+[ 2013-11-28T23:33:53+08:00 ] 0.0.0.0 /github/living/index.php/task/over
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.003346s ]
+SQL: UPDATE `task` SET `state`=3 WHERE ( `id` = 57 ) [ RunTime:0.000993s ]
+

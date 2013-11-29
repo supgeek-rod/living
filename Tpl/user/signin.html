@@ -1,0 +1,28 @@
+{include file="header.html"}
+<!-- Start 主体部分 -->
+<div id="mainer">
+  <div class="jumbotron text-center">
+    <h1>Happy living!</h1>
+    <p>
+      这是一个 <span class="label label-primary">生活</span> 和 <span class="label label-primary">工作</span> 的 <span class="label label-default">计划</span> <span class="label label-default">整理</span> <span class="label label-default">记录</span> 工具<br />
+      释放大脑中琐碎零乱的事物，让你全身心投入其中，以更高效更轻松更便捷地完成你的任务。
+    </p>
+  </div>
+
+  <div id="signin" class="container">
+        <form class="form-signin" action="__APP__/user/login" method="post">
+          <h2 class="form-signin-heading">
+          	<b>登录living</b>
+          	<a href="__APP__/user/register" style="font-size:16px" class="label label-info pull-right">注册</a>
+          </h2>
+          <input type="text" name="email" class="form-control" placeholder="Email address" required="required" autofocus="">
+          <input type="password" name="password" class="form-control" placeholder="Password" required="">
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me"> 记住我的登录
+          </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        </form>
+  </div>
+</div>
+<!-- End 主体部分 -->
+{include file="footer.html"}
