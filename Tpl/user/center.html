@@ -1,7 +1,120 @@
 {include file="header.html"}
 <!-- Start 主体部分 -->
-<div id="mainer">
-  <h1 class="text-center" style="margin:6% auto 22%">个人中心页面</h1>
+<div id="mainer" class="center">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<ol class="breadcrumb">
+			  <li><a href="__APP__"><span class="glyphicon glyphicon-home"></span> living</a></li>
+			  <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"></span> {$smarty.session.user.name}的个人中心</a></li>
+			  {if $smarty.const.ACTION_NAME=='center'}
+			  <li class="active"><span class="glyphicon glyphicon-bell"></span> 提醒与通知</li>
+			  {/if}
+			  {if $smarty.const.ACTION_NAME=='task'}
+			  <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+			  <li class="active">所有提醒事项</li>
+			  {/if}
+			  {if $smarty.const.ACTION_NAME=='note'}
+			  <li><a href="#"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+			  <li class="active">所有备忘录记录</li>
+			  {/if}
+			  {if $smarty.const.ACTION_NAME=='menology'}
+			  <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+			  <li class="active">所有日历记录</li>
+			  {/if}
+			</ol>
+		</div>
+		<div class="panel-body row">
+			<div class="col-sm-2">
+				<div class="btn-group menu btn-block">
+					<button class="btn btn-block btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-th"></span>
+							{if $smarty.const.ACTION_NAME=='center'}通知与提醒 {/if}
+							{if $smarty.const.ACTION_NAME=='task'}提醒事项 {/if}
+							{if $smarty.const.ACTION_NAME=='note'}备忘录 {/if}
+							{if $smarty.const.ACTION_NAME=='menology'}日历 {/if}
+						&nbsp;&nbsp;&nbsp;
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+					    <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
+					    <li><a href="__APP__/user/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+					    <li><a href="__APP__/user/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+					    <li><a href="__APP__/user/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">帐户管理与设置</a></li>
+					</ul>
+				</div>
+				<ul class="nav2 nav nav-pills nav-stacked">
+					{if $smarty.const.ACTION_NAME=='task'}
+					<li class="active taskall">
+						<a href="javascript:taskAll()"><span class="badge pull-right">{$taskTotal}</span><span class="glyphicon glyphicon-bookmark"></span> 所有提醒事项</a>
+					</li>
+					<li class="taskno">
+						<a href="javascript:taskNo()"><span class="badge pull-right">{$taskNo}</span><span class="glyphicon glyphicon-bookmark"></span> 未完成提醒事项</a>
+					</li>
+					<li class="taskok">
+						<a href="javascript:taskOk()"><span class="badge pull-right">{$taskOk}</span><span class="glyphicon glyphicon-bookmark"></span> 已完成提醒事项</a>
+					</li>
+					{/if}
+				</ul>
+			</div>
+			<div class="col-sm-10">
+				{if $smarty.const.ACTION_NAME=='task'}
+				<script type="text/javascript">
+					$(function(){
+						taskAll();
+					});
+				</script>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>标题</th>
+							<th>事项内容</th>
+							<th>提醒时间</th>
+							<th>当前状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						{$i = 1}
+						{foreach $taskList as $task}
+						<tr>
+							<td>{$i++}</td>
+							<td>{$task['title']}</td>
+							<td>{$task['content']|default:'null'}</td>
+							<td>{$task['date']|default:'null'}</td>
+							<td>{$state[$task['state']]}</td>							
+							<td>
+								{if $task['state']==3}
+								<button type="button" class="btn btn-xs btn-default">取消完成</button>
+								{/if}
+								{if $task['state']==1}
+								<button type="button" class="btn btn-xs btn-success">标记完成</button>
+								{/if}
+								<button type="button" class="btn btn-xs btn-primary">修改</button>
+								&nbsp;
+								<button type="button" class="btn btn-xs btn-danger">彻底删除</button>
+							</td>
+						</tr>
+						{/foreach}
+					</tbody>	
+				</table>
+				{/if}
+				{$show}
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
+<script type="text/javascript" src="__ROOT__/Tpl/js/liv_center.js"></script>
 <!-- End 主体部分 -->
 {include file="footer.html"}

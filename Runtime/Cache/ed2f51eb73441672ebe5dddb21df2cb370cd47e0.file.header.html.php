@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-11-28 15:19:52
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-05 20:01:07
          compiled from "./Tpl/header.html" */ ?>
 <?php /*%%SmartyHeaderCode:12055214595295a1ec9f8e63-02901687%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ed2f51eb73441672ebe5dddb21df2cb370cd47e0' => 
     array (
       0 => './Tpl/header.html',
-      1 => 1385623190,
+      1 => 1386244866,
       2 => 'file',
     ),
   ),
@@ -24,24 +24,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <head>
 <title>living</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Boot include -->
-<link href="<?php echo @__ROOT__;?>
-/Tpl/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="<?php echo @__ROOT__;?>
-/Tpl/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-<link href="<?php echo @__ROOT__;?>
-/Tpl/css/living.css" rel="stylesheet" media="screen">
-<script type="text/javascript" src="<?php echo @__ROOT__;?>
-/Tpl/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="<?php echo @__ROOT__;?>
-/Tpl/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo @__ROOT__;?>
-/Tpl/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="<?php echo @__ROOT__;?>
-/Tpl/js/liv_start.js"></script>
 <script type="text/javascript">
 	app = "__APP__";
+	liv_module = "<?php echo @MODULE_NAME;?>
+";
+	liv_action = "<?php echo @ACTION_NAME;?>
+";
 </script>
+<link href="__ROOT__/Tpl/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="__ROOT__/Tpl/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="__ROOT__/Tpl/css/living.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="__ROOT__/Tpl/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Tpl/js/liv_start.js"></script>
 </head>
 
 <body>
@@ -53,10 +49,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	    <?php if (empty($_SESSION['user'])){?>
 	   	<li class="signin register"><a href="__APP__/user/signin"><span class="glyphicon glyphicon-user"> 注册/登录</span></a></li>
 	    <?php }else{ ?>
-	    <li class="center"><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
+	    <li class="user"><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
 	    <li class="setup dropdown"><a href="__APP__/user/setup"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
-	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:100px !important; margin-top:2px;">
-				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:150px !important; margin-top:2px;">
+				<li role="presentation"><a><?php echo $_SESSION['user']['name'];?>
+, 上午好!</a></li>
+	    		<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
 			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
 			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">开启使用提示</a></li>
 			    <li role="presentation" class="divider"></li>
@@ -68,4 +67,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="clearfix"></div>
 	<hr style="margin:0" />
 </div>
-<!-- End 头部 --><?php }} ?>
+<!-- End 头部 -->
+<?php }} ?>

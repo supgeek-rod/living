@@ -6,42 +6,54 @@ $(function(){
 	setupNav();	//帐户设置下拉
 });
 
+/** 首页滚动条 */
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if(top>=3000){
+	$(window).scrollTop(600);
+
+    }
+});
 
 //##############################
 // 函数块
 
 // 当前频道高亮函数
 function atNav(){
-	var url = location.href.split("/");
-	var at = url[url.length-1];
-	$("#header .nav li").removeClass("active");
-	switch(at){
-		case 'signin':
-			$("#header .nav .signin").addClass("active");
-			break;
-			case 'register':
-			$("#header .nav .register").addClass("active");
-			break;
-		case 'center':
-			$("#header .nav .center").addClass("active");
-			break;
-		case 'setup':
-			$("#header .nav .setup").addClass("active");
-			break;
-		default:
-			$("#header .nav .home").addClass("active");
-	}
+    $('#header .nav li').removeClass('active');
+    switch(liv_action){
+	case 'signin':
+	    $('#header .nav .signin').addClass('active');
+	    break;
+	case 'register':
+	    $('#header .nav .register').addClass('active');
+	    break;
+	case 'setup':
+	    $('#header .nav .setup').addClass('active');
+	    break;
+    }
+
+    switch(liv_module){
+	case 'index':
+	    $('#header .nav .home').addClass('active');
+	    break;
+	case 'user':
+	    $('#header .nav .user').addClass('active');
+	    break;
+	default:
+	    $('#header .nav .home').addClass('active');
+    }
 }
 
 // 帐户设置下拉显示函数
 function setupNav(){
-	$("#header .setup").mouseover(function(){
-		$("#header .setup .setup-go").fadeTo("slow",1);
+	$('#header .setup').mouseover(function(){
+		$('#header .setup .setup-go').fadeTo('slow',1);
 	});
 
-	$("#header .setup").mouseout(function(){
+	$('#header .setup').mouseout(function(){
 		setTimeout(function(){
-			$("#header .setup .setup-go").fadeOut("slow");
+			$('#header .setup .setup-go').fadeOut('slow');
 		},666);
 	});
 }

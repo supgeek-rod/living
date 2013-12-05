@@ -1,7 +1,9 @@
-/*
-* living js文件
-*/
-//入口
+/**
+ * living js文件
+ * @author sup.rod
+ */
+
+/** 入口文件 */
 $(function(){
     livingStart();
     taskOperate();
@@ -9,9 +11,7 @@ $(function(){
 });
 
 
-/*
- * 提醒事项、备忘录、日历的初始化状态
- */
+/** 提醒事项、备忘录、日历的初始化状态 */
 function livingStart(){
     var bgcolor = null;
     var atBgcolor = '#F5F5F5';
@@ -44,9 +44,7 @@ function livingStart(){
     });
 }
 
-/*
- * 提醒事项操作事件处理
- */
+/** 提醒事项操作事件处理 */
 function taskOperate(){
 
     // 提醒事项 -新增提交
@@ -90,8 +88,16 @@ function taskOperate(){
         $("#task .list-group").prepend(str);
         $("#task input:text:eq(0)").focus();
     });
+}
 
-    
+
+/** 备忘录操作事件处理 */
+function noteOperate(){
+    // 添加按钮
+
 
 }
+
+
+    
 

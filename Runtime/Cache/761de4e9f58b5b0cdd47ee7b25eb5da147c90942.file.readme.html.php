@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-11-29 23:46:20
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-04 12:12:09
          compiled from "./Tpl/readme.html" */ ?>
 <?php /*%%SmartyHeaderCode:2372313565298af6fa4b625-77086480%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '761de4e9f58b5b0cdd47ee7b25eb5da147c90942' => 
     array (
       0 => './Tpl/readme.html',
-      1 => 1385739979,
+      1 => 1386130327,
       2 => 'file',
     ),
   ),
@@ -49,7 +49,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		这是一个<span class="label label-primary">生活</span>和<span class="label label-primary">工作</span>的&nbsp;&nbsp;<span class="label label-default">计划</span> <span class="label label-default">整理</span> <span class="label label-default">记录</span>工具<br />
 		释放大脑中琐碎零乱的事物，让你全身心投入其中，以更高效更轻松更便捷地完成你的任务。
 	</p>
-	<div class="panel panel-default">
+	<div class="panel panel-default hidden">
 		<div class="panel-heading" style="font-size:18px">给living一个评价吧 <span class="caret"></span></div>
 		<div class="panel-body hidden">
 			<button type="button" class="btn btn-default">
@@ -91,15 +91,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<address>
 			<h3>Contact supgeek.rod</h3>
 			<p><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp; supgeek.rod@gmail.com</p>
-			<p><i class="icon-home"></i>&nbsp;&nbsp; <a href="http://zhanghongrou.com.cn">zhanghongrou.com.cn</a></p>
-			<!-- <p><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp; (+86) 18600688776</p> -->
-			<p><i class="icon-google-plus-sign"></i>&nbsp;&nbsp; supgeek.rod@gmail.com</p>
-			<p><i class="icon-github"></i>&nbsp;&nbsp; supgeek.rod@gmail.com</p>
+			<p><i class="icon-home"></i>&nbsp;&nbsp; <a href="http://supgeek-rod.com" target="_blank">supgeek-rod.com</a></p>
+			<p><i class="icon-google-plus-sign"></i>&nbsp;&nbsp; <a href="" target="_blank">张小天真</a></p>
+			<p><i class="icon-github"></i>&nbsp;&nbsp; <a href="" target="_blank">@supgeek-rod</a></p>
 		</address>
 
 		<h3>Project at github</h3>
-		<p><i class="icon-github"> living:</i>&nbsp;&nbsp; supgeek.rod@gmail.com</p>
-		<p><i class="icon-github"> web catch:</i>&nbsp;&nbsp; supgeek.rod@gmail.com</p>
+		<p><i class="icon-github"> living:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/living.git" target="_blank">clone git</a></p>
+		<p><i class="icon-github"> web catch:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/web-catch.git" target="_blank">clone git</a></p>
+		<p><i class="icon-github"> sb fengqing:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/web-catch.git" target="_blank">clone git</a></p>
 
 	</div>
 </div>

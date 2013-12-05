@@ -9,8 +9,7 @@ class TaskAction extends Action {
 	$_POST['addtime'] = time();
 	$_POST['uid'] = $_SESSION['user']['id'];
 	$_POST['state'] = 1;
-	$result = $db->create();
-	//dump($result);
+	$db->create();
 	$id = $db->add();
 	if($id){
 	    return json_encode($result);
