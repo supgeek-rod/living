@@ -1,11 +1,11 @@
 {include file="header.html"}
 <!-- Start 主体部分 -->
-<div id="mainer" class="center">
+<div id="center">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<ol class="breadcrumb">
 			  <li><a href="__APP__"><span class="glyphicon glyphicon-home"></span> living</a></li>
-			  <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"></span> {$smarty.session.user.name}的个人中心</a></li>
+			  <li><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"></span> {$smarty.session.user.name}的个人中心</a></li>
 			  {if $smarty.const.ACTION_NAME=='center'}
 			  <li class="active"><span class="glyphicon glyphicon-bell"></span> 提醒与通知</li>
 			  {/if}
@@ -23,7 +23,7 @@
 			  {/if}
 			</ol>
 		</div>
-		<div class="panel-body row">
+		<div class="panel-body row center_main">
 			<div class="col-sm-2">
 				<div class="btn-group menu btn-block">
 					<button class="btn btn-block btn-success dropdown-toggle" type="button" data-toggle="dropdown">
@@ -36,17 +36,17 @@
 						<span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
-					    <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
-					    <li><a href="__APP__/user/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
-					    <li><a href="__APP__/user/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
-					    <li><a href="__APP__/user/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+					    <li><a href="__APP__/center/index"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
+					    <li><a href="__APP__/center/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+					    <li><a href="__APP__/center/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+					    <li><a href="__APP__/center/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
 					    <li class="divider"></li>
 					    <li><a href="#">帐户管理与设置</a></li>
 					</ul>
 				</div>
 				<ul class="nav2 nav nav-pills nav-stacked">
 					{if $smarty.const.ACTION_NAME=='task'}
-					<li class="active taskall">
+					<li class="taskall">
 						<a href="javascript:taskAll()"><span class="badge pull-right">{$taskTotal}</span><span class="glyphicon glyphicon-bookmark"></span> 所有提醒事项</a>
 					</li>
 					<li class="taskno">
@@ -103,13 +103,14 @@
 				{/if}
 				{$show}
 				<ul class="pagination">
-					<li class="disabled"><a href="#">&laquo;</a></li>
-					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">2</a></li>
+				<!--	<li><a href="javascript:taskPage(-1)">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="javascript:taskPage()">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">4</a></li>
 					<li><a href="#">5</a></li>
-					<li><a href="#">&raquo;</a></li>
+					<li><a href="javascript:taskPage(1)">&raquo;</a></li>
+				-->	
 				</ul>
 			</div>
 		</div>

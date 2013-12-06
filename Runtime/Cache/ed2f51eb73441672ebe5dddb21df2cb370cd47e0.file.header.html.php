@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-05 20:01:07
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-06 19:51:56
          compiled from "./Tpl/header.html" */ ?>
 <?php /*%%SmartyHeaderCode:12055214595295a1ec9f8e63-02901687%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ed2f51eb73441672ebe5dddb21df2cb370cd47e0' => 
     array (
       0 => './Tpl/header.html',
-      1 => 1386244866,
+      1 => 1386330709,
       2 => 'file',
     ),
   ),
@@ -49,8 +49,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	    <?php if (empty($_SESSION['user'])){?>
 	   	<li class="signin register"><a href="__APP__/user/signin"><span class="glyphicon glyphicon-user"> 注册/登录</span></a></li>
 	    <?php }else{ ?>
-	    <li class="user"><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
-	    <li class="setup dropdown"><a href="__APP__/user/setup"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
+	    <li class="center"><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
+	    <li class="account dropdown"><a href="__APP__/account/index"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
 	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:150px !important; margin-top:2px;">
 				<li role="presentation"><a><?php echo $_SESSION['user']['name'];?>
 , 上午好!</a></li>

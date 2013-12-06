@@ -5,8 +5,8 @@
 
 /** 入口文件 */
 $(function(){
-    livingStart();
-    taskOperate();
+    //livingStart();
+    //taskOperate();
 
 });
 

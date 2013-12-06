@@ -26,8 +26,8 @@
 	    {if empty($smarty.session.user) }
 	   	<li class="signin register"><a href="__APP__/user/signin"><span class="glyphicon glyphicon-user"> 注册/登录</span></a></li>
 	    {else}
-	    <li class="user"><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
-	    <li class="setup dropdown"><a href="__APP__/user/setup"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
+	    <li class="center"><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
+	    <li class="account dropdown"><a href="__APP__/account/index"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
 	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:150px !important; margin-top:2px;">
 				<li role="presentation"><a>{$smarty.session.user.name}, 上午好!</a></li>
 	    		<li role="presentation" class="divider"></li>

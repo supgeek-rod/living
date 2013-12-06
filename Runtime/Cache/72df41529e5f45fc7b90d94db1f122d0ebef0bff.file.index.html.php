@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-05 20:15:18
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-06 22:05:53
          compiled from "./Tpl/index.html" */ ?>
 <?php /*%%SmartyHeaderCode:5818325195295a1ec939228-16021393%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '72df41529e5f45fc7b90d94db1f122d0ebef0bff' => 
     array (
       0 => './Tpl/index.html',
-      1 => 1386244916,
+      1 => 1386338752,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <link href="__ROOT__/Tpl/css/fullcalendar.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/fullcalendar.print.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/calendar.css" rel="stylesheet" media="screen">
-<div onclick="launch()" id="launch" style="width:60px; height:60px; background:#DDD; position:absolute; top:90%; left:90%; z-index:9;"></div>
 <!-- Start 主体部分 -->
 <div id="mainer">
 	<div class="row">
@@ -65,23 +64,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<div class="panel-heading">
 					    <h3 class="panel-title">
 							<span class="glyphicon glyphicon-th-list dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"></span>&nbsp;&nbsp;
-							<div class="dropdown" style="display:inline">	
-							<span class="dropdown-toggle" id="dropdownMenu1###" data-toggle="dropdown##">提醒事项<span class="caret"></span></span>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu####1">
-									<li class="dropdown-header" role="presentation">select lists</li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Life list</a></li>
-								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">work list</a></li>
-								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Today list</a></li>
-								</ul>
+							<span class="dropdown-toggle">提醒事项</span>
+							<div class="task-icon pull-right" style="margin-top:-5px">
+								<a href="javascript:taskBack()" class="glyphicon glyphicon-chevron-left text-center btn btn-default" style="display:none"> </a>
+								<a class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
+								<a href="javascript:taskAdd()" class="glyphicon glyphicon-plus text-center btn btn-default"> </a>
+								<a class="glyphicon glyphicon-ok text-center btn btn-default" style="display:none"> </a>
 							</div>
-							<span class="hide glyphicon glyphicon-chevron-left pull-right"></span>
-							<span class="glyphicon glyphicon-plus pull-right"></span>
-							<span class="hide glyphicon glyphicon-pencil pull-right"></span>
-							<span class="hide glyphicon glyphicon-ok pull-right"></span>
 					    </h3>
 					</div>
 					<div class="panel-body">
 					    <ul class="list-group">
+					    	<li class="newTask list-group-item" style="display:none">
+					    		<span class="input-group">
+					    			<input type="text" class="form-control input-sm" placeholder="Title">
+					    			<span class="input-group-btn">
+					    				<button class="btn btn-default btn-sm btn-success" type="button" onclick="taskSubmit()"><span class="glyphicon glyphicon-ok"></span></button> <button class="btn btn-default btn-sm more btn-info" type="button"><span class="glyphicon glyphicon-chevron-down"></span></button>
+					    			</span>
+					    		</span>
+					    		<div class="input-group date form_date hidden" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+									<input class="form-control" size="16" type="text" name="birthday" value="" placeholder="选择提醒时间" readonly>
+									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+								</div>
+					    		<textarea class="form-control hidden" rows="2" placeholder="提醒事项备注"></textarea>
+					    	</li>
 					    	<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['taskList']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
@@ -108,9 +114,9 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 					    	<span class="glyphicon glyphicon-book"> 备忘录</span>
 					    	<div class="note-icon pull-right" style="margin-top:-5px">
 								<a href="javascript:noteBack()" class="glyphicon glyphicon-chevron-left text-center btn btn-default" style="display:none"> </a>
-								<a href="javascript:noteAdd()" class="glyphicon glyphicon-plus text-center btn btn-default"> </a>
 								<a class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
-								<a class="glyphicon glyphicon-ok text-center btn btn-primary" href="javascript:noteSubmit()"  style="display:none"> </a>
+								<a href="javascript:noteAdd()" class="glyphicon glyphicon-plus text-center btn btn-default"> </a>
+								<a class="glyphicon glyphicon-ok text-center btn btn-primary" href="javascript:noteSubmit()" style="display:none"> </a>
 							</div>
 					    </h3>
 					</div>
@@ -171,8 +177,9 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 <script type="text/javascript" src="__ROOT__/Tpl/js/jquery-ui.custom.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/fullcalendar.js"></script>
 
+<!-- 日历生成 -->
 <script>
-
+	/*
 	$(document).ready(function() {
 	
 		var date = new Date();
@@ -253,9 +260,8 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 		});
 		
 	});
-
+	*/
 </script>
-
 <?php echo $_smarty_tpl->getSubTemplate ("footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <?php }} ?>

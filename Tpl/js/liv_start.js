@@ -37,6 +37,12 @@ function atNav(){
 	case 'index':
 	    $('#header .nav .home').addClass('active');
 	    break;
+	case 'center':
+	    $('#header .nav .center').addClass('active');
+	    break;
+	case 'account':
+	    $('#header .nav .account').addClass('active');
+	    break;
 	case 'user':
 	    $('#header .nav .user').addClass('active');
 	    break;

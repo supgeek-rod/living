@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-06 17:22:18
-         compiled from "./Tpl/user/center.html" */ ?>
-<?php /*%%SmartyHeaderCode:13926944715295b0d62b3ef7-20839182%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-06 19:36:00
+         compiled from "./Tpl/center/center.html" */ ?>
+<?php /*%%SmartyHeaderCode:212321258052a1b60d51a121-95433733%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '84f44f7ae3a13d43269f0b6a9fda4329558a3a32' => 
+    '586e5ffb8f0b1b643cb057feff343b297ea05dc4' => 
     array (
-      0 => './Tpl/user/center.html',
-      1 => 1386321737,
+      0 => './Tpl/center/center.html',
+      1 => 1386329743,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13926944715295b0d62b3ef7-20839182',
+  'nocache_hash' => '212321258052a1b60d51a121-95433733',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5295b0d630418',
+  'unifunc' => 'content_52a1b60d6845e',
   'variables' => 
   array (
     'taskTotal' => 0,
@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5295b0d630418')) {function content_5295b0d630418($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_52a1b60d6845e')) {function content_52a1b60d6845e($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <!-- Start 主体部分 -->
 <div id="center">
@@ -38,7 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="panel-heading">
 			<ol class="breadcrumb">
 			  <li><a href="__APP__"><span class="glyphicon glyphicon-home"></span> living</a></li>
-			  <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['user']['name'];?>
+			  <li><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['user']['name'];?>
 的个人中心</a></li>
 			  <?php if (@ACTION_NAME=='center'){?>
 			  <li class="active"><span class="glyphicon glyphicon-bell"></span> 提醒与通知</li>
@@ -70,10 +70,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
-					    <li><a href="__APP__/user/center"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
-					    <li><a href="__APP__/user/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
-					    <li><a href="__APP__/user/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
-					    <li><a href="__APP__/user/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+					    <li><a href="__APP__/center/index"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
+					    <li><a href="__APP__/center/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+					    <li><a href="__APP__/center/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+					    <li><a href="__APP__/center/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
 					    <li class="divider"></li>
 					    <li><a href="#">帐户管理与设置</a></li>
 					</ul>
