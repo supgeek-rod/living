@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-06 22:05:53
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-09 16:56:29
          compiled from "./Tpl/index.html" */ ?>
 <?php /*%%SmartyHeaderCode:5818325195295a1ec939228-16021393%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '72df41529e5f45fc7b90d94db1f122d0ebef0bff' => 
     array (
       0 => './Tpl/index.html',
-      1 => 1386338752,
+      1 => 1386579387,
       2 => 'file',
     ),
   ),
@@ -19,9 +19,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5295a1ec9f3c3',
   'variables' => 
   array (
-    'taskList' => 0,
-    'v' => 0,
     'notelist' => 0,
+    'v' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -30,6 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <link href="__ROOT__/Tpl/css/fullcalendar.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/fullcalendar.print.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/calendar.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <!-- Start 主体部分 -->
 <div id="mainer">
 	<div class="row">
@@ -67,7 +67,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							<span class="dropdown-toggle">提醒事项</span>
 							<div class="task-icon pull-right" style="margin-top:-5px">
 								<a href="javascript:taskBack()" class="glyphicon glyphicon-chevron-left text-center btn btn-default" style="display:none"> </a>
-								<a class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
+								<a href="javascript:taskEdit()" class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
+								<a href="" class="glyphicon glyphicon-remove text-center btn btn-default" style="display:none"> </a>
 								<a href="javascript:taskAdd()" class="glyphicon glyphicon-plus text-center btn btn-default"> </a>
 								<a class="glyphicon glyphicon-ok text-center btn btn-default" style="display:none"> </a>
 							</div>
@@ -75,33 +76,41 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</div>
 					<div class="panel-body">
 					    <ul class="list-group">
-					    	<li class="newTask list-group-item" style="display:none">
-					    		<span class="input-group">
-					    			<input type="text" class="form-control input-sm" placeholder="Title">
-					    			<span class="input-group-btn">
-					    				<button class="btn btn-default btn-sm btn-success" type="button" onclick="taskSubmit()"><span class="glyphicon glyphicon-ok"></span></button> <button class="btn btn-default btn-sm more btn-info" type="button"><span class="glyphicon glyphicon-chevron-down"></span></button>
-					    			</span>
-					    		</span>
-					    		<div class="input-group date form_date hidden" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-									<input class="form-control" size="16" type="text" name="birthday" value="" placeholder="选择提醒时间" readonly>
-									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-								</div>
-					    		<textarea class="form-control hidden" rows="2" placeholder="提醒事项备注"></textarea>
-					    	</li>
-					    	<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['taskList']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
-$_smarty_tpl->tpl_vars['v']->_loop = true;
-?>
-							<li class="list-group-item" taskid=<?php echo $_smarty_tpl->tpl_vars['v']->value['id'];?>
-><input class="cbox" type="checkbox"><?php echo $_smarty_tpl->tpl_vars['v']->value['title'];?>
-</li>
-							<?php }
-if (!$_smarty_tpl->tpl_vars['v']->_loop) {
-?>
-							<p>开始添加提醒事项</p>
-							<?php } ?>
+					    	<script type="text/javascript">
+					    		$(function(){
+					    			taskStart();
+					    		})
+					    	</script>
+					    	<p>点击右上角开始添加你的提醒事项</p>
 					    </ul>
+			    		<li class="newTask-model list-group-item" style="display:none">
+			    		<span class="input-group">
+			    			<input type="text" class="form-control input-sm task-title" placeholder="Title">
+			    			<span class="input-group-btn">
+			    				<button class="btn btn-default btn-sm btn-success" type="button" onclick="taskSubmit()"><span class="glyphicon glyphicon-ok"></span></button>
+			    				<button class="btn btn-default btn-sm more btn-info task-more-btn" type="button" onclick="taskMore()"><span class="glyphicon glyphicon-chevron-down"></span></button>
+			    			</span>
+			    		</span>
+						<div class="task-more form-group hidden">
+							<div class="input-group date task_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+								<input class="form-control task-date" size="16" type="text" name="taskdate" value="" placeholder="选择提醒时间" readonly>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+							<script type="text/javascript">
+								$('.task_date').datetimepicker({
+									language:  'zh-CN',
+									weekStart: 1,
+									todayBtn:  1,
+									autoclose: 1,
+									todayHighlight: 1,
+									startView: 2,
+									minView: 2,
+									forceParse: 0
+							    });
+							</script>
+				    		<textarea name="taskcontent" class="form-control task-content" rows="2" placeholder="提醒事项备注"></textarea>
+			    		</div>
+			    	</li>							
 					</div>
 				</div>
 			</div>
@@ -137,6 +146,9 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 						</div>
 					    <!-- note 列表 -->
 					    <ul class="list-group" id="note-list">
+					    	<script type="text/javascript">
+					    		//noteStart();
+					    	</script>
 					    	<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['notelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
@@ -157,7 +169,7 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 		<div class="clearfix"></div>
 	</div>
 	<!-- 日历 -->
-	<div class="row">
+	<div class="row hidden">
 		<div class="col-lg-12">
 			<div class="panel panel-default" id="menology">
 				<div class="panel-heading">
@@ -172,7 +184,6 @@ if (!$_smarty_tpl->tpl_vars['v']->_loop) {
 </div>
 
 <!-- End 主体部分 -->
-<script type="text/javascript" src="__ROOT__/Tpl/js/living.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/liv_function.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/jquery-ui.custom.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/fullcalendar.js"></script>

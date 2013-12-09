@@ -26,7 +26,7 @@ class IndexAction extends Action {
     /** task版块初始数据 */
     public function task(){
 	$db = M("task");
-	$result = $db->where("uid = {$_SESSION['user']['id']} and state != 3")->select();
+	$result = $db->where("uid = {$_SESSION['user']['id']} and state != 3")->order('id desc')->select();
 	$this->assign("taskList",$result);
     }
     

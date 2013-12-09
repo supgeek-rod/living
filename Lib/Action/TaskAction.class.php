@@ -3,6 +3,13 @@
  * 提醒事项操作类
  */
 class TaskAction extends Action {
+	//获取初始数据
+    public function start(){
+	$db = M("task");
+	$result = $db->where("uid = {$_SESSION['user']['id']} and state != 3")->order('id desc')->select();
+	echo json_encode($result);
+    }
+
     // 添加方法
     public function add(){
 	$db = M('task');
@@ -12,7 +19,7 @@ class TaskAction extends Action {
 	$db->create();
 	$id = $db->add();
 	if($id){
-	    return json_encode($result);
+	    echo json_encode($id);
 	}else{
 	    die('fail');
 	}

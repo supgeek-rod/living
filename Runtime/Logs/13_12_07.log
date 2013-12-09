@@ -1,0 +1,63 @@
+[ 2013-12-07T19:07:44+08:00 ] 0.0.0.0 /github/living/index.php/center/taskJson
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.004275s ]
+NOTIC: [8] Undefined index: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( `uid` = 18 ) LIMIT 1   [ RunTime:0.000626s ]
+SQL: SELECT * FROM `task` WHERE ( `uid` = 18 ) LIMIT 0,8   [ RunTime:0.000755s ]
+NOTIC: [8] Undefined variable: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 38 行.
+
+[ 2013-12-07T19:07:50+08:00 ] 0.0.0.0 /github/living/index.php/center/taskJson?p=2&state=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.004472s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( `uid` = 18 ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SELECT * FROM `task` WHERE ( `uid` = 18 ) LIMIT 8,8   [ RunTime:0.000494s ]
+NOTIC: [8] Undefined variable: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 38 行.
+
+[ 2013-12-07T19:07:51+08:00 ] 0.0.0.0 /github/living/index.php/center/taskJson?p=1&state=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( `uid` = 18 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `task` WHERE ( `uid` = 18 ) LIMIT 0,8   [ RunTime:0.000351s ]
+NOTIC: [8] Undefined variable: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 38 行.
+
+[ 2013-12-07T19:08:03+08:00 ] 0.0.0.0 /github/living/index.php/task/add
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.002796s ]
+SQL: INSERT INTO `task` (`title`,`addtime`,`uid`,`state`) VALUES ('ABC',1386414483,18,1) [ RunTime:0.007257s ]
+NOTIC: [8] Undefined variable: result /Applications/MAMP/htdocs/github/living/Lib/Action/taskAction.class.php 第 15 行.
+
+[ 2013-12-07T19:09:22+08:00 ] 0.0.0.0 /github/living/index.php/note/select
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.001048s ]
+SQL: SELECT * FROM `note` WHERE ( `id` = 8 )  [ RunTime:0.000232s ]
+
+[ 2013-12-07T19:10:11+08:00 ] 0.0.0.0 /github/living/index.php/center/taskJson
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001531s ]
+NOTIC: [8] Undefined index: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( `uid` = 18 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `task` WHERE ( `uid` = 18 ) LIMIT 0,8   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 38 行.
+
+[ 2013-12-07T19:14:39+08:00 ] 0.0.0.0 /github/living/index.php/center/taskJson
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.001486s ]
+NOTIC: [8] Undefined index: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `task` WHERE ( `uid` = 18 ) LIMIT 1   [ RunTime:0.000415s ]
+SQL: SELECT * FROM `task` WHERE ( `uid` = 18 ) LIMIT 0,8   [ RunTime:0.000441s ]
+NOTIC: [8] Undefined variable: state /Applications/MAMP/htdocs/github/living/Lib/Action/centerAction.class.php 第 38 行.
+

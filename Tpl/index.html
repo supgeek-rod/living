@@ -2,6 +2,7 @@
 <link href="__ROOT__/Tpl/css/fullcalendar.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/fullcalendar.print.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/calendar.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <!-- Start 主体部分 -->
 <div id="mainer">
 	<div class="row">
@@ -39,7 +40,8 @@
 							<span class="dropdown-toggle">提醒事项</span>
 							<div class="task-icon pull-right" style="margin-top:-5px">
 								<a href="javascript:taskBack()" class="glyphicon glyphicon-chevron-left text-center btn btn-default" style="display:none"> </a>
-								<a class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
+								<a href="javascript:taskEdit()" class="disabled glyphicon glyphicon-pencil text-center btn btn-default"> </a>
+								<a href="" class="glyphicon glyphicon-remove text-center btn btn-default" style="display:none"> </a>
 								<a href="javascript:taskAdd()" class="glyphicon glyphicon-plus text-center btn btn-default"> </a>
 								<a class="glyphicon glyphicon-ok text-center btn btn-default" style="display:none"> </a>
 							</div>
@@ -47,25 +49,41 @@
 					</div>
 					<div class="panel-body">
 					    <ul class="list-group">
-					    	<li class="newTask list-group-item" style="display:none">
-					    		<span class="input-group">
-					    			<input type="text" class="form-control input-sm" placeholder="Title">
-					    			<span class="input-group-btn">
-					    				<button class="btn btn-default btn-sm btn-success" type="button" onclick="taskSubmit()"><span class="glyphicon glyphicon-ok"></span></button> <button class="btn btn-default btn-sm more btn-info" type="button"><span class="glyphicon glyphicon-chevron-down"></span></button>
-					    			</span>
-					    		</span>
-					    		<div class="input-group date form_date hidden" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-									<input class="form-control" size="16" type="text" name="birthday" value="" placeholder="选择提醒时间" readonly>
-									<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-								</div>
-					    		<textarea class="form-control hidden" rows="2" placeholder="提醒事项备注"></textarea>
-					    	</li>
-					    	{foreach $taskList as $v}
-							<li class="list-group-item" taskid={$v['id']}><input class="cbox" type="checkbox">{$v['title']}</li>
-							{foreachelse}
-							<p>开始添加提醒事项</p>
-							{/foreach}
+					    	<script type="text/javascript">
+					    		$(function(){
+					    			taskStart();
+					    		})
+					    	</script>
+					    	<p>点击右上角开始添加你的提醒事项</p>
 					    </ul>
+			    		<li class="newTask-model list-group-item" style="display:none">
+			    		<span class="input-group">
+			    			<input type="text" class="form-control input-sm task-title" placeholder="Title">
+			    			<span class="input-group-btn">
+			    				<button class="btn btn-default btn-sm btn-success" type="button" onclick="taskSubmit()"><span class="glyphicon glyphicon-ok"></span></button>
+			    				<button class="btn btn-default btn-sm more btn-info task-more-btn" type="button" onclick="taskMore()"><span class="glyphicon glyphicon-chevron-down"></span></button>
+			    			</span>
+			    		</span>
+						<div class="task-more form-group hidden">
+							<div class="input-group date task_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+								<input class="form-control task-date" size="16" type="text" name="taskdate" value="" placeholder="选择提醒时间" readonly>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+							<script type="text/javascript">
+								$('.task_date').datetimepicker({
+									language:  'zh-CN',
+									weekStart: 1,
+									todayBtn:  1,
+									autoclose: 1,
+									todayHighlight: 1,
+									startView: 2,
+									minView: 2,
+									forceParse: 0
+							    });
+							</script>
+				    		<textarea name="taskcontent" class="form-control task-content" rows="2" placeholder="提醒事项备注"></textarea>
+			    		</div>
+			    	</li>							
 					</div>
 				</div>
 			</div>
@@ -101,6 +119,9 @@
 						</div>
 					    <!-- note 列表 -->
 					    <ul class="list-group" id="note-list">
+					    	<script type="text/javascript">
+					    		//noteStart();
+					    	</script>
 					    	{foreach $notelist as $v}
 							<li class="list-group-item" noteid="{$v['id']}">{$v['title']}</li>
 							{foreachelse}
@@ -113,7 +134,7 @@
 		<div class="clearfix"></div>
 	</div>
 	<!-- 日历 -->
-	<div class="row">
+	<div class="row hidden">
 		<div class="col-lg-12">
 			<div class="panel panel-default" id="menology">
 				<div class="panel-heading">
@@ -128,7 +149,6 @@
 </div>
 
 <!-- End 主体部分 -->
-<script type="text/javascript" src="__ROOT__/Tpl/js/living.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/liv_function.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/jquery-ui.custom.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/fullcalendar.js"></script>
