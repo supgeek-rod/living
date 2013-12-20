@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<title>living</title>
+<title>happy Living. {$smarty.now|date_format:'%m-%d'}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript">
-	app = "__APP__";
-	liv_module = "{$smarty.const.MODULE_NAME}";
-	liv_action = "{$smarty.const.ACTION_NAME}";
+	// 声明外链js文件需要使用的ThinkPHP变量
+	var app = "__APP__";
+	var liv_module = "{$smarty.const.MODULE_NAME}";
+	var liv_action = "{$smarty.const.ACTION_NAME}";
 </script>
 <link href="__ROOT__/Tpl/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="__ROOT__/Tpl/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
@@ -14,7 +15,7 @@
 <script type="text/javascript" src="__ROOT__/Tpl/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Tpl/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="__ROOT__/Tpl/js/liv_start.js"></script>
+<script type="text/javascript" src="__ROOT__/Tpl/js/living.js"></script>
 </head>
 
 <body>
@@ -24,18 +25,16 @@
 	<ul class="nav nav-tabs pull-right">
 	    <li class="home active"><a href="__APP__"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
 	    {if empty($smarty.session.user) }
-	   	<li class="signin register"><a href="__APP__/user/signin"><span class="glyphicon glyphicon-user"> 注册/登录</span></a></li>
+	   	<li class="user"><a href="__APP__/user/signin"><span class="glyphicon glyphicon-user"> 注册/登录</span></a></li>
 	    {else}
-	    <li class="center"><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
-	    <li class="account dropdown"><a href="__APP__/account/index"><span class="glyphicon glyphicon-cog"> 帐户设置</span></span></a>	
-	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:150px !important; margin-top:2px;">
-				<li role="presentation"><a>{$smarty.session.user.name}, 上午好!</a></li>
-	    		<li role="presentation" class="divider"></li>
+	    <li class="center"><a href="__APP__/center/task"><span class="glyphicon glyphicon-user"> 个人中心</span></a></li>
+	    <li class="account dropdown"><a href="__APP__/account/index"><span class="glyphicon glyphicon-cog"> 用户设置</span></span></a>	
+	    	<ul class="setup-go dropdown-menu text-right pull-right" role="menu" aria-labelledby="dropdownMenu1" style="min-width:150px !important;">
+				<li role="presentation"><a>{$smarty.session.user.name}, 欢迎回来!</a></li>
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">开启使用提示</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">使用帮助</a></li>
 			    <li role="presentation" class="divider"></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/user/signout">安全退出</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="__APP__/user/signout">一键安全退出</a></li>
 			</ul>
 	    </li>
 	    {/if}

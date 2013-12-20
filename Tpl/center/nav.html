@@ -1,0 +1,61 @@
+<div class="col-sm-2">
+	<div class="btn-group menu btn-block">
+		<button class="btn btn-block btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+			<span class="glyphicon glyphicon-th"></span>
+				&nbsp;
+				{if $smarty.const.ACTION_NAME=='index'}通知与提醒 {/if}
+				{if $smarty.const.ACTION_NAME=='task'}提醒事项 {/if}
+				{if $smarty.const.ACTION_NAME=='note'}备忘录 {/if}
+				{if $smarty.const.ACTION_NAME=='menology'}日历 {/if}
+				&nbsp;
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+		    <li><a href="__APP__/center/index"><span class="glyphicon glyphicon-bell"></span> 通知与提醒</a></li>
+		    <li><a href="__APP__/center/task"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+		    <li><a href="__APP__/center/note"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+		    <li><a href="__APP__/center/menology"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+		    <li class="divider"></li>
+		    <li><a href="__APP__/account/index">帐户管理与设置</a></li>
+		</ul>
+	</div>
+	<ul class="nav2 nav nav-pills nav-stacked">
+		<!-- nav -->
+		{if $smarty.const.ACTION_NAME=='index'}
+		<li class="active">
+			<a href="javascript:bellRemind()"><span class="badge pull-right"></span><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提醒</a>
+		</li>
+		<li>
+			<a href="javascript:bellInform()"><span class="badge pull-right"></span><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通知</a>
+		</li>
+		{/if}
+
+		<!-- task nav -->
+		{if $smarty.const.ACTION_NAME=='task'}
+		<li class="task">
+			<a href="javascript:taskAdd()"><span class="badge pull-right"></span><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;新增提醒 <span class="badge hidden">+1</span></a>
+		</li>
+		<li class="taskall">
+			<a href="javascript:taskAll()"><span class="task-alls badge pull-right">{$taskTotal}</span><span class="glyphicon glyphicon-bookmark"></span> 所有提醒</a>
+		</li>
+		<li class="taskno">
+			<a href="javascript:taskNo()"><span class="task-nos badge pull-right">{$taskNo}</span><span class="glyphicon glyphicon-bookmark"></span> 未完成提醒</a>
+		</li>
+		<li class="taskok">
+			<a href="javascript:taskOk()"><span class="task-oks badge pull-right">{$taskOk}</span><span class="glyphicon glyphicon-bookmark"></span> 已完成提醒</a>
+		</li>
+		{/if}
+
+		<!-- note nav -->
+		{if $smarty.const.ACTION_NAME=='note'}
+		<li class="noteall">
+			<a href="javascript:noteAdd()"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增备忘录 <span class="badge hidden">+1</span></a>
+		</li>
+		<li class="noteall active">
+			<a href="__APP__/center/note"><span class="badge pull-right">{$noteTotal}</span><span class="glyphicon glyphicon-bookmark"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备忘录列表</a>
+		</li>
+		{/if}
+	</ul>
+	<hr />
+	<div style="height:180px; background:#F1F1F1; padding-top:80px; text-align:center;">AD   W:col-sm-2 / H:180px</div>
+</div>

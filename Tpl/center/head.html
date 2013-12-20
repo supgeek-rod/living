@@ -1,0 +1,21 @@
+<div class="panel-heading">
+	<ol class="breadcrumb">
+		<li><a href="__APP__"><span class="glyphicon glyphicon-home"></span> living</a></li>
+		<li><a href="__APP__/center/index"><span class="glyphicon glyphicon-user"></span> {$smarty.session.user.name}的个人中心</a></li>
+		{if $smarty.const.ACTION_NAME=='index'}
+		<li class="active"><span class="glyphicon glyphicon-bell"></span> 提醒与通知</li>
+		{/if}
+		{if $smarty.const.ACTION_NAME=='task'}
+		<li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+		<li class="active">所有提醒事项</li>
+		{/if}
+		{if $smarty.const.ACTION_NAME=='note'}
+		<li><a href="#"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+		<li class="active">所有备忘录记录</li>
+		{/if}
+		{if $smarty.const.ACTION_NAME=='menology'}
+		<li><a href="#"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+		<li class="active">所有日历记录</li>
+		{/if}
+	</ol>
+</div>

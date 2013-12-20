@@ -7,10 +7,13 @@ class CenterAction extends Action {
 
     /** 个人中心 */
     public function index(){
-		$this->display('center');
+		$this->display('index');
     }
 
-    /** 个人中心 提醒事项 */
+
+/* ----------------------------------------- */
+// task
+    /** task/center 起始页  */
     public function task(){
 		$db = M('task');
 		$task_total = $db->where("uid={$_SESSION['user']['id']}")->count();
@@ -19,34 +22,68 @@ class CenterAction extends Action {
 		$this->assign("taskNo",$task_no);				// 未完成数量
 		$this->assign("taskTotal",$task_total);			// 总数量
 		$this->assign("taskOk",$task_ok);				// 完成数量
-		$this->display('center');
+		$this->display('task');
     }
 
-	/** 个人中心 json处理 */
-	public function taskJson(){
+	/** task 分页 */
+	public function taskPage(){
 		$db = M('task');
 		import('ORG.Util.Page');
 		$where['uid'] = $_SESSION['user']['id'];
 		if($_REQUEST['state']){
 			$where['state'] = $_REQUEST['state'];
-			$state = $_REQUEST['state'];
+			$state = $_REQUEST['state'];		// 数据状态
 		}
 		$count = $db->where($where)->count();
 		$page = new Page($count,8);
-		$result = $db->where($where)->limit($page->firstRow.','.$page->listRows)->select();
-		$taskTP = ceil($count/8);
-		$data = array('state'=>$state,'taskTP'=>$taskTP,'result'=>$result);
+		$result = $db->where($where)->order('utime desc')->limit($page->firstRow.','.$page->listRows)->select();		// 分页后数据
+		$taskTP = ceil($count/8);		// 总页数
+		$data = array('state'=>$state,'taskTP'=>$taskTP,'result'=>$result);			// 组装 task状态、task总页数、task分页数据
 		echo json_encode($data);
 	}
 
-    /** 个人中心 备忘录 */
+
+/* -------------------------------------------------------------- */
+// note
+    /** note/center 起始页 */
     public function note(){
-		$this->display('center');
+		$this->display('note');
     }
 
+	/** note 数据初始化 */
+	public function noteStart(){
+		$db = M('note');
+		$where['uid'] = $_SESSION['user']['id'];
+		$where['state'] = 1;
+		$result = $db->where($where)->order('utime desc')->select();
+		if($result){
+			foreach($result as $k=>$v){
+				$result[$k]['utime'] = date('m-d H:i',$result[$k]['utime']);
+			}
+			echo json_encode($result);
+		}else{
+			return false;
+		}
+	}
+
+	/** note 数据删除 */
+	public function noteRemove(){
+		$db = M('note');
+		$where = $db->create();
+		$result = $db->where($where)->delete();
+		if($result){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+/* -------------------------------------------------------------- */
+// menology
     /** 个人中心 日历 */
     public function menology(){
-		$this->display('center');
+		$this->display('menology');
     }
 
 }

@@ -7,13 +7,13 @@ body { margin:16px 18px; }
 #header ul { border:none;}
 
 
-#mainer { margin:0 auto; width:100%; padding-top:40px; }
+#mainer { margin:0 auto; width:100%; padding-top:20px; }
 .libackground { background:#F5F5F5 !important; }
 
 #mainer .jumbotron { background:#FFF !important; margin-bottom:0; }
 #signin { width:380px; margin:0 auto 6%; border:2px solid #EEE; border-radius:12px; padding:22px 32px 28px; }
-#register { width:480px; margin:0 auto 2%; border:2px solid #EEE; border-radius:12px; padding:8px 62px 18px 22px; }
-#register h2 { margin:8px auto 18px; padding-left:28px; }
+#register { width:480px; margin:0 auto 4%; border:2px solid #EEE; border-radius:12px; padding:8px 62px 18px 22px; }
+#register h2 { margin:8px auto 18px; padding-left:48px; }
 #register .form-group { margin:0 0 6px; }
 #register .col-xs-3 { padding-left:0; padding-right:0px; }
 
@@ -22,12 +22,12 @@ body { margin:16px 18px; }
 #notify {}
 #notify .panel-body { height:286px; }
 
-#note .panel-body { padding:8px 14px 8px 12px; overflow:scroll; height:336px; max-height:336px; word-wrap:break-word; }
+#note .panel-body { padding:8px 14px 8px 12px; overflow:auto; height:336px; max-height:336px; word-wrap:break-word; }
 #note .panel-body li { line-height:22px; padding-left:6px; border-radius: 0px !important; border-left:none; border-right:none; }
-#note .panel-body li:first-child { border-top:none; }
+#note .panel-body li:nth-child(1) { border-top:none; }
 #note .panel-body .note-title { margin:4px auto 6px; }
 
-#task .panel-body { padding:8px 14px 8px 12px; overflow:scroll; height:336px; max-height:336px; }
+#task .panel-body { padding:8px 14px 8px 12px; overflow:auto; height:336px; max-height:336px; }
 #task .panel-body li:nth-child(1) { border-top:none; }
 #task .list-group-item {  }
 #task .list-group-item { padding:7px 0  7px 2px; border:none; border-top:1px solid #DDD; border-bottom:1px solid #DDD; border-radius: 0px !important; line-height:16px; white-space:nowrap; overflow:hidden; text-overflow:hidden; }
@@ -42,9 +42,17 @@ body { margin:16px 18px; }
 
 /** 个人中心 */
 #center { margin:0 auto; width:100%; padding-top:40px; }
-#center .center_main { min-height:480px; max-height:480px; overflow:scroll; }
+#center .center_main { min-height:480px; max-height:480px; overflow:auto; }
 #center .breadcrumb { margin-bottom:0; padding:0 15px; }
 #center .pagination { margin:0 0 12px; }
 #center .menu { margin:12px 0 6px; }
 
+#myModal .modal-dialog { margin-top:80px;}
+
+
+/** 帐户设置 */
+#account { margin-top:40px; }
+#account .main { margin-bottom:20px; }
+#account .breadcrumb { margin-bottom:0; padding:0 15px;}
+#account .account_main { min-height:400px; }
 

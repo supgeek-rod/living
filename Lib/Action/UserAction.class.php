@@ -8,7 +8,11 @@ class UserAction extends Action {
 
     /** 登录页面 */
     public function signin(){
-		$this->display("signin");
+		if($_SESSION['user']){
+			header("location:{$this->app}/index/index");
+		}else{
+			$this->display("signin");
+		}
     }
     
     /** 注册页面 */
@@ -21,13 +25,12 @@ class UserAction extends Action {
 		$db = M('user');
 		$_POST['email'] = strtolower($_POST['email']);
 		$_POST['password'] = md5($_POST['password']);
+		$_POST['regtime'] = time();
+		$_POST['state'] = 1;
 		$info = $db->create();
-		$info['regtime'] = time();
-		$info['state'] = 1;
 		$id = $db->add();
 		if($id){
 			header("location:{$this->app}/index/index");
-			echo '<script>alert("ok")</script>';
 		}else{
 			header("location:{$this->app}/user/register");
 		}
@@ -41,7 +44,6 @@ class UserAction extends Action {
 		if($result){
 			$result[0]['password'] = null;
 			$_SESSION['user'] = $result[0];
-			dump($_SESSION);
 			header("location:{$this->app}/index/index");
 		}else{
 			echo 'nono';
@@ -54,5 +56,19 @@ class UserAction extends Action {
 		session_unset($_SESSION);
 		header("location:{$this->app}/index/index");
     }
+
+	/** 用户密码修改 */
+	public function updatePasswd(){
+		$db = M('user');
+		$where['id'] = $_SESSION['user']['id'];
+		$data['password'] = md5($_POST['password']);
+		$result = $db->where($where)->data($data)->save();
+		if($result){
+			unset($_SESSION['user']);
+			echo 'ture';
+		}else{
+			echo null;
+		}
+	}
 
 }

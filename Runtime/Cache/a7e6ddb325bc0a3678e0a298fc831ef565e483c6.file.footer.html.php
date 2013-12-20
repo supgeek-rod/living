@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-05 20:06:08
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-20 14:28:03
          compiled from "./Tpl/footer.html" */ ?>
-<?php /*%%SmartyHeaderCode:13735151395295a1eca69592-50822213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12358879952b3e37352e868-58230881%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13735151395295a1eca69592-50822213',
+  'nocache_hash' => '12358879952b3e37352e868-58230881',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5295a1eca78a8',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_52b3e37353b58',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5295a1eca78a8')) {function content_5295a1eca78a8($_smarty_tpl) {?><!-- Start 底部 -->
+<?php if ($_valid && !is_callable('content_52b3e37353b58')) {function content_52b3e37353b58($_smarty_tpl) {?><!-- Start 底部 -->
 <div id="footer">
 	<hr style="margin-bottom:6px" />
 	<span>2013@ <a href="__APP__/index/readme" class="text-success glyphicon glyphicon-send">living</a> by <a class="glyphicon glyphicon-user" href="http://supgeek-rod.com" target="_blank">sup.rod</a></span>
