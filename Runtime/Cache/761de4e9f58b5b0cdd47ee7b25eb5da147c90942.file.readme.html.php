@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-20 15:02:22
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-23 14:53:15
          compiled from "./Tpl/readme.html" */ ?>
 <?php /*%%SmartyHeaderCode:92912862552b3eb7ebf47d5-99013667%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '761de4e9f58b5b0cdd47ee7b25eb5da147c90942' => 
     array (
       0 => './Tpl/readme.html',
-      1 => 1387468766,
+      1 => 1387602109,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_52b3eb7ecada5',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_52b3eb7ecada5')) {function content_52b3eb7ecada5($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Applications/MAMP/htdocs/github/living/ThinkPHP/Extend/Vendor/Smarty/plugins/modifier.date_format.php';
 ?><!DOCTYPE html>
@@ -99,7 +99,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</address>
 
 		<h3>Project at github</h3>
-		<p><i class="icon-github"> living:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/living.git" target="_blank">clone git</a></p>
+		<p><i class="icon-github"> living:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/living.git" target="_blank">fork</a></p>
 		<!-- 
 		<p><i class="icon-github"> web catch:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/web-catch.git" target="_blank">clone git</a></p>
 		<p><i class="icon-github"> sb fengqing:</i>&nbsp;&nbsp; <a href="" target="_blank">pages</a> | <a href="https://github.com/supgeek-rod/web-catch.git" target="_blank">clone git</a></p>

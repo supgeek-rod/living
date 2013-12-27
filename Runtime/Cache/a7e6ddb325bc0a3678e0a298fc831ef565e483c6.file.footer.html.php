@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-12-20 14:28:03
+<?php /* Smarty version Smarty-3.1.6, created on 2013-12-26 10:07:34
          compiled from "./Tpl/footer.html" */ ?>
 <?php /*%%SmartyHeaderCode:12358879952b3e37352e868-58230881%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a7e6ddb325bc0a3678e0a298fc831ef565e483c6' => 
     array (
       0 => './Tpl/footer.html',
-      1 => 1386245111,
+      1 => 1388020229,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_52b3e37353b58',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_52b3e37353b58')) {function content_52b3e37353b58($_smarty_tpl) {?><!-- Start 底部 -->
 <div id="footer">
