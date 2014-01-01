@@ -3,6 +3,6 @@ living
 
 Hello living
 
-主页: [http://supgeek-rod.io/living](Living)
+主页: [living](http://supgeek-rod.io/living)
 
-SAE Dome: [http://supliving.sinaapp.com](Supliving)
+SAE Dome: [Supliving](http://supliving.sinaapp.com)
