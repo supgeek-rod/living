@@ -1,0 +1,41 @@
+<include file="living/Tpl/header.html" />
+<!-- Start 主体部分 -->
+<div id="center">
+	<div class="panel panel-default">
+		<include file='living/Tpl/Center/head.html' />
+		<div class="panel-body row center_main">
+			<include file='living/Tpl/Center/nav.html' />
+
+			<div class="col-sm-10 row">
+				<div class="col-sm-3 pull-right" style="height:400px; padding-top:180px; background:#F1F1F1">This AD&nbsp;&nbsp; W:col-sm-3 / H:400px</div>
+				<div class="panel-group col-sm-9" id="accordion">
+					<script type="text/javascript">
+						$(function(){
+							//noteStart();
+						});
+					</script>
+					<div class="panel panel-default remind">
+						<div class="panel-heading"><span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;&nbsp;&nbsp;提醒</div>
+						<div class="panel-collapse in">
+							<div class="panel-body" style="min-height:300px">
+								<p class="alert alert-info">正在开发中...</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default inform" style="display:none">
+						<div class="panel-heading"><span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;&nbsp;&nbsp;通知</div>
+						<div class="panel-collapse in">
+							<div class="panel-body" style="min-height:300px">
+								<p class="alert alert-info">正在开发中...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end main(col-sm-10 row) -->
+
+		</div>
+	</div>
+</div>
+<!-- End 主体部分 -->
+<include file="living/Tpl/footer.html" />

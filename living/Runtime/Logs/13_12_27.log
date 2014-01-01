@@ -1,0 +1,21 @@
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl//public/Css/bootstrap.min.css
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Css/living.css
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Css/bootstrap-datetimepicker.min.css
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Js/living.js
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Js/jquery-1.8.3.min.js
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Js/bootstrap-datetimepicker.min.js
+ERR: 非法操作:living
+
+[ 2013-12-27T20:22:42+08:00 ] 127.0.0.1 /living/index.php/user/living/Tpl/public/Js/bootstrap.min.js
+ERR: 非法操作:living
+

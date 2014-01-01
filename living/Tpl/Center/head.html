@@ -1,0 +1,29 @@
+<js href="{$Think.config.LIVING_PUBLIC}/Js/liv_center.js" />
+<js href="{$Think.config.LIVING_PUBLIC}/Js/bootstrap-datetimepicker.zh-CN.js" />
+<div class="panel-heading">
+	<ol class="breadcrumb">
+		<li><a href="__APP__"><span class="glyphicon glyphicon-home"></span> living</a></li>
+		<li><a href="__APP__/Center/index"><span class="glyphicon glyphicon-user"></span> {$Think.session.user.name}的个人中心</a></li>
+
+		<if condition="$Think.const.ACTION_NAME eq 'index'">
+		<li class="active"><span class="glyphicon glyphicon-bell"></span> 提醒与通知</li>
+		</if>		
+
+		<if condition="$Think.const.ACTION_NAME eq 'task'">
+		<li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 提醒事项</a></li>
+		<li class="active">所有提醒事项</li>
+		</if>
+
+		<if condition="$Think.const.ACTION_NAME eq 'note'">
+		<li><a href="#"><span class="glyphicon glyphicon-book"></span> 备忘录</a></li>
+		<li class="active">所有备忘录记录</li>
+		</if>
+
+		<if condition="$Think.const.ACTION_NAME eq 'menology'">
+		<li><a href="#"><span class="glyphicon glyphicon-calendar"></span> 日历</a></li>
+		<li class="active">所有日历记录</li>
+		</if>
+
+
+	</ol>
+</div>

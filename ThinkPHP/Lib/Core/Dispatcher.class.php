@@ -26,7 +26,7 @@ class Dispatcher {
      */
     static public function dispatch() {
         $urlMode  =  C('URL_MODEL');
-        if(!empty($_GET[C('VAR_PATHINFO')])) { // 判断URL里面是否有兼容模式参数
+        if(isset($_GET[C('VAR_PATHINFO')])) { // 判断URL里面是否有兼容模式参数
             $_SERVER['PATH_INFO']   = $_GET[C('VAR_PATHINFO')];
             unset($_GET[C('VAR_PATHINFO')]);
         }
@@ -47,15 +47,20 @@ class Dispatcher {
         // 开启子域名部署
         if(C('APP_SUB_DOMAIN_DEPLOY')) {
             $rules      = C('APP_SUB_DOMAIN_RULES');
-            $subDomain  = strtolower(substr($_SERVER['HTTP_HOST'],0,strpos($_SERVER['HTTP_HOST'],'.')));
-            define('SUB_DOMAIN',$subDomain); // 二级域名定义
-            if($subDomain && isset($rules[$subDomain])) {
-                $rule =  $rules[$subDomain];
-            }elseif(isset($rules['*'])){ // 泛域名支持
-                if('www' != $subDomain && !in_array($subDomain,C('APP_SUB_DOMAIN_DENY'))) {
-                    $rule =  $rules['*'];
-                }
+            if(isset($rules[$_SERVER['HTTP_HOST']])) { // 完整域名或者IP配置
+                $rule = $rules[$_SERVER['HTTP_HOST']];
+            }else{
+                $subDomain  = strtolower(substr($_SERVER['HTTP_HOST'],0,strpos($_SERVER['HTTP_HOST'],'.')));
+                define('SUB_DOMAIN',$subDomain); // 二级域名定义
+                if($subDomain && isset($rules[$subDomain])) {
+                    $rule =  $rules[$subDomain];
+                }elseif(isset($rules['*'])){ // 泛域名支持
+                    if('www' != $subDomain && !in_array($subDomain,C('APP_SUB_DOMAIN_DENY'))) {
+                        $rule =  $rules['*'];
+                    }
+                }                
             }
+
             if(!empty($rule)) {
                 // 子域名部署规则 '子域名'=>array('分组名/[模块名]','var1=a&var2=b');
                 $array  =   explode('/',$rule[0]);
@@ -75,7 +80,7 @@ class Dispatcher {
             }
         }
         // 分析PATHINFO信息
-        if(empty($_SERVER['PATH_INFO'])) {
+        if(!isset($_SERVER['PATH_INFO'])) {
             $types   =  explode(',',C('URL_PATHINFO_FETCH'));
             foreach ($types as $type){
                 if(0===strpos($type,':')) {// 支持函数判断
@@ -121,6 +126,8 @@ class Dispatcher {
                 $_GET   =  array_merge($var,$_GET);
             }
             define('__INFO__',$_SERVER['PATH_INFO']);
+        }else{
+            define('__INFO__','');
         }
 
         // URL常量
@@ -132,7 +139,7 @@ class Dispatcher {
         if (C('APP_GROUP_LIST')) {
             define('GROUP_NAME', self::getGroup(C('VAR_GROUP')));
             // 分组URL地址
-            define('__GROUP__',(!empty($domainGroup) || strtolower(GROUP_NAME) == strtolower(C('DEFAULT_GROUP')) )?__APP__ : __APP__.'/'.GROUP_NAME);
+            define('__GROUP__',(!empty($domainGroup) || strtolower(GROUP_NAME) == strtolower(C('DEFAULT_GROUP')) )?__APP__ : __APP__.'/'.(C('URL_CASE_INSENSITIVE') ? strtolower(GROUP_NAME) : GROUP_NAME));
         }
         
         // 定义项目基础加载路径
@@ -150,11 +157,13 @@ class Dispatcher {
                 C(include $config_path.'config.php');
             // 加载分组别名定义
             if(is_file($config_path.'alias.php'))
-                alias_import(include $config_path.'alias.php');            
+                alias_import(include $config_path.'alias.php');
+            // 加载分组tags文件定义
+            if(is_file($config_path.'tags.php'))
+                C('tags', include $config_path.'tags.php');
             // 加载分组函数文件
             if(is_file($common_path.'function.php'))
                 include $common_path.'function.php';
-
         }        
         define('MODULE_NAME',self::getModule(C('VAR_MODULE')));
         define('ACTION_NAME',self::getAction(C('VAR_ACTION')));
@@ -162,9 +171,9 @@ class Dispatcher {
         // 当前模块和分组地址
         $moduleName    =   defined('MODULE_ALIAS')?MODULE_ALIAS:MODULE_NAME;
         if(defined('GROUP_NAME')) {
-            define('__URL__',!empty($domainModule)?__GROUP__.$depr : __GROUP__.$depr.$moduleName);
+            define('__URL__',!empty($domainModule)?__GROUP__.$depr : __GROUP__.$depr.( C('URL_CASE_INSENSITIVE') ? strtolower($moduleName) : $moduleName ) );
         }else{
-            define('__URL__',!empty($domainModule)?__APP__.'/' : __APP__.'/'.$moduleName);
+            define('__URL__',!empty($domainModule)?__APP__.'/' : __APP__.'/'.( C('URL_CASE_INSENSITIVE') ? strtolower($moduleName) : $moduleName) );
         }
         // 当前操作地址
         define('__ACTION__',__URL__.$depr.(defined('ACTION_ALIAS')?ACTION_ALIAS:ACTION_NAME));
